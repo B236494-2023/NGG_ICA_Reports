@@ -1,4 +1,5 @@
-This folder contains the NanoPlots report for the raw read data downloaded from  the Sequence Read Archive using the SRA Toolkit.
+This folder contains the NanoPlots report for the raw read data downloaded from the NCBI Sequence Read Archive using
+the SRA Toolkit.
 There were 13.9 Gbases in total.
 The command used to do so was:
 > fasterq-dump SRR25038556
