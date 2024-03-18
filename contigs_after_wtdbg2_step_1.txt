@@ -1,3 +1,11 @@
+The first step of wtdbg2 assembly involves assembling the raw reads (fastq file) and generating the contig layout and edge sequences in a file ending with the suffix ".ctg.lay.gz" using the command below:
+$ wtdbg2 -i SRR25038556.fastq -o ./ICA_wtdbg2_output -g 500m -t 200 -x sq
+
+These results in this file were generated from the ICA_wtdbg2_output.ctg.lay.gz file using the command below:
+$ zcat ICA_wtdbg2_output.ctg.lay.gz | grep -oP '^>ctg\d+\s+nodes=\d+\s+len=\d+' > contigs_after_wtdbg2_step_1.txt
+
+! There are 3363 contigs in total. !
+
 >ctg1 nodes=4652 len=5886208
 >ctg2 nodes=2575 len=3278336
 >ctg3 nodes=1221 len=1518080
